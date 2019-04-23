@@ -1,0 +1,196 @@
+@import "reset.scss";
+@import "defaults.scss";
+body{
+    font-family: "Open Sans - Condensed Bold" !important;
+}
+.header{
+    background-color: #ffffff;
+    position: relative;
+    z-index: 9999;
+    .left{
+        ul{
+            display: flex;
+            li:first-child{
+                padding-left: 0;
+            }
+        }
+    }
+    .right{
+        ul{
+            display: flex;
+            float: right;
+        }
+    }
+    .header-top{
+        background-color: #000000;
+        ul{
+            margin: 0px 0;
+        }
+        .off{
+            color: #808080;
+            font-size: 11px;
+            padding-left: 0;
+        }
+        li{
+            padding: 0 1.5rem;
+            i{
+                color: #009be0;
+            }
+            span{
+                color: #ffffff;
+                
+                font-size: 15px;
+                font-weight: 400;
+                padding-left: 10px;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover{
+                    color: #009be0;
+                }
+            }
+            
+        }
+        li:not(:last-child){
+            border-right: solid 1px #808080;
+        }
+    }
+    .header-bot{
+        
+        .left{
+            ul{
+                align-items: baseline;
+            }
+        }
+        .tel{
+            margin: 0 28px;
+           
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .upper{
+            text-transform: uppercase;
+            color: #000000;
+            font-weight: 600;
+            font-size: 13px;
+           
+            letter-spacing: -1px;
+            cursor: pointer;
+            &:hover{
+                color: #009be0;
+            }
+        }
+        .tel{
+            color: #000000;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        ul{
+            margin: 16px 0;
+            li{
+                img{
+                  margin-top: -4px;
+                }
+            }
+        }
+        .right{
+            ul{
+                float: right;
+                margin-top: 20px;
+            }
+            li:first-child{
+                margin-right: 30px !important;
+            }
+            li:not(:last-child){
+                margin-right: 2rem;
+            }
+            li:nth-last-child(2){
+                margin-right: 10px;
+            }
+        }
+
+    }
+}
+.container-fluid{
+    padding: 0 0 !important;
+}
+.visual{
+    position: relative;
+    height: 513px;
+    background: url("../img/visual.png");
+    .left-gradient{
+        position: absolute;
+        height: 100%;
+        width: 15%;
+        background-image: linear-gradient(86deg, #768c95 0%, #768c95 27%, rgba(118, 140, 149, 0) 100%);
+    }
+    .prev,.next{
+        cursor: pointer;
+        position: absolute;
+        border-radius: 2px 0 0 2px;
+        background-color: #ffffff;
+        opacity: 0.5;
+        font-size: 50px;
+        top: 40%    ;
+        padding: 0 10px;
+        transition: 1s ease;
+        &:hover{
+            background-color: #ffffff;
+            opacity: 1;
+            color: #009be0 !important;
+        }
+    }
+    .next{
+        right: 0;
+    }
+    img{
+        position: absolute;
+        width: 100%;
+    }
+    .catush{
+      /*   max-height: 100% */
+      z-index: 1;
+      top: -61px;
+    }
+    .info{
+        padding-left: 5%;
+        padding-top: 25%;
+        .logo-img{
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            img{
+                position: static;
+            }
+            img:first-child{
+                width: 60%;
+                height: 40px;
+            }
+            img:last-child{
+                width: 50%;
+            }
+        }
+        .btn{
+           
+            font-size: 14px;
+            font-weight: 400;
+            padding: 10px 17px;
+        }
+        .title{
+            color: #000000;
+          
+            font-size: 16px;
+            margin: -5px 0;
+            font-weight: 600;
+            letter-spacing: -0.56px;
+        }
+        .content{
+            color: #333333;
+            
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
