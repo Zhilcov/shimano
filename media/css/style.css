@@ -152,11 +152,6 @@ body {
   position: relative;
   height: 513px;
   background: url("../img/visual.png"); }
-  .visual .left-gradient {
-    position: absolute;
-    height: 100%;
-    width: 15%;
-    background-image: linear-gradient(86deg, #768c95 0%, #768c95 27%, rgba(118, 140, 149, 0) 100%); }
   .visual .prev, .visual .next {
     cursor: pointer;
     position: absolute;
@@ -181,9 +176,22 @@ body {
     /*   max-height: 100% */
     z-index: 22;
     top: -61px; }
+  .visual .catush2 {
+    /*   max-height: 100% */
+    z-index: 22;
+    top: -28px; }
+  .visual .catush3 {
+    /*   max-height: 100% */
+    z-index: 22;
+    top: -41px; }
+  .visual .myslides {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s; }
   .visual .info {
     padding-left: 5%;
     padding-top: 25%; }
+    .visual .info .title {
+      text-transform: uppercase; }
     .visual .info .logo-img {
       position: relative;
       display: -webkit-box;

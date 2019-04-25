@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
         <header>
@@ -58,13 +59,13 @@
         </header>
         <section class="visual">
                 <div class="container-fluid">
-                                <a  class="prev">&#10094</a>
-                                <a class="next">&#10095</a>			
+                                <a  class="prev" onclick="nextslide(-1)">&#10094</a>
+                                <a class="next" onclick="nextslide(1)">&#10095</a>			
                         <div class="container">
-                                <div class="row">
+                                <div class="row myslides animated  fadeIn">
                                         <div class="col col-md-6">
                                                 <div class="info">
-                                                        <p class="title">КАТУШКИ  БЕЗЫНЕРЦИОННЫЕ</p>
+                                                        <p class="title">КАТУШКИ БЕЗЫНЕРЦИОННЫЕ</p>
                                                         <div class="logo-img">
                                                                 <img src="./media/img/logoimg1.png" alt="">
                                                                 <img src="./media/img/logo_sa.png" alt="">
@@ -75,6 +76,39 @@
                                         </div>
                                         <div class="col col-md-6">
                                                 <img class="catush" src="./media/img/Layer_26.png" alt="">
+                                        </div>
+                                </div>
+                                <div class="row myslides animated  fadeIn">
+                                        <div class="col col-md-6">
+                                                <div class="info">
+                                                        <p class="title">КАТУШКИ C БАЙТРАННЕРОМ</p>
+                                                        <div class="logo-img">
+                                                                <img src="./media/img/logoimg1.png" alt="">
+                                                                <img src="./media/img/logo_sa.png" alt="">
+                                                        </div>
+                                                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi perferendis rem maxime tempore hic veritatis. , consectetur adipisicing elit. Modi perferendis rem maxime tempore hic veritatis</p>
+						
+                                                        <button type="button" class="btn btn-primary">ПОСМОТРЕТЬ В КАТОЛОГЕ</button>
+                                                </div>
+                                        </div>
+                                        <div class="col col-md-6 ">
+                                                <img class="catush2" src="./media/img/2214_karpovye-katushki.png" alt="">
+                                        </div>
+                                </div>
+                                <div class="row myslides animated  fadeIn">
+                                        <div class="col col-md-6">
+                                                <div class="info">
+                                                        <p class="title">Инерционные мультипликаторные катушки</p>
+                                                        <div class="logo-img">
+                                                                <img src="./media/img/logoimg1.png" alt="">
+                                                                <img src="./media/img/logo_sa.png" alt="">
+                                                        </div>
+                                                        <p class="content">Портрет потребителя разнородно переворачивает фирменный стиль. Наряду с этим, создание приверженного покупателя развивает культурный пак-шот. Нестандартный подход отталкивает стиль менеджмента. </p>
+                                                        <button type="button" class="btn btn-primary">ПОСМОТРЕТЬ В КАТОЛОГЕ</button>
+                                                </div>
+                                        </div>
+                                        <div class="col col-md-6">
+                                                <img class="catush3" src="./media/img/catush.png" alt="">
                                         </div>
                                 </div>
                         </div>
@@ -466,5 +500,8 @@
                         </div>
                 </div>
         </footer>
+       
+        <script src="./media/js/sliders.js"></script>
+
 </body>
 </html>
